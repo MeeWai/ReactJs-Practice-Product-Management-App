@@ -16,7 +16,7 @@ const RetrieveProducts = () =>{
     const getAllProducts = async () => {
         try {
            const response= await axios.get(baseURL);
-           const allProducts= response.data;
+           const allProducts= response.data.content;
            if(allProducts.length>0){
                getProducts(allProducts);
                enqueueSnackbar("Product load successfully.", {

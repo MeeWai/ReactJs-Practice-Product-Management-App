@@ -3,6 +3,7 @@ package com.example.product.Controller;
 import com.example.product.Entity.Product;
 import com.example.product.Service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -20,9 +21,14 @@ public class ProductController {
         return productService.saveProduct(product);
     }
 
+//    @GetMapping("/getAllProducts")
+//    public Iterable<Product> getProducts(){
+//        return  productService.getAllProducts();
+//    }
+
     @GetMapping("/getAllProducts")
-    public Iterable<Product> getProducts(){
-        return  productService.getAllProducts();
+    public Iterable<Product> getProducts(Pageable pageable){
+        return  productService.getAllProducts(pageable);
     }
 
     @PutMapping("/updateProduct")

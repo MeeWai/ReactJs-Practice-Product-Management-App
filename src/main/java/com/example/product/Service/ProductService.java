@@ -3,6 +3,7 @@ package com.example.product.Service;
 import com.example.product.Entity.Product;
 import com.example.product.Repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -14,10 +15,14 @@ public class ProductService {
         return productRepository.save(product);
     }
 
-    public Iterable<Product> getAllProducts() {
-        return productRepository.findAll();
-    }
+//    public Iterable<Product> getAllProducts() {
+//        return productRepository.findAll();
+//    }
 
+    public Iterable<Product> getAllProducts(Pageable pageable) {
+
+        return productRepository.findAll(pageable);
+    }
 
     public Product updateProduct(Product product) {
         Product getProduct = productRepository.findById(product.getProductID()).orElse(null);

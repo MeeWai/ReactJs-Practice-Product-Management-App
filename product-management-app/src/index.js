@@ -7,7 +7,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-    <SnackbarProvider maxSnack={3} anchorOrigin={{
+    <SnackbarProvider maxSnack={3}  preventDuplicate anchorOrigin={{
         vertical: 'bottom',
         horizontal: 'center',
     }} TransitionComponent={Fade}>

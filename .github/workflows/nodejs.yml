@@ -34,4 +34,4 @@ jobs:
     - name: continous integration with npm
       run: npm ci
 #    - run: npm run build --if-present
-    - run: npm test
+#    - run: npm test

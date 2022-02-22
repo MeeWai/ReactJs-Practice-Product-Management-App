@@ -13,7 +13,7 @@ const AddProduct = () => {
 
         const classes = useStyles();
 
-        const baseURL = "http://localhost:8080/api/addNewProduct";
+        const baseURL = "http://localhost:8081/api/addNewProduct";
 
         const {enqueueSnackbar} = useSnackbar();
         const [currentProductName, setProductName] = useState("");

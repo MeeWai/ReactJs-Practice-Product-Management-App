@@ -10,7 +10,7 @@ const RetrieveProducts = () =>{
     const baseURL="http://localhost:8080/api/getAllProducts";
 
     useEffect(()=>{
-        getAllProducts();
+        getAllProducts()
     },[])
 
     const getAllProducts = async () => {

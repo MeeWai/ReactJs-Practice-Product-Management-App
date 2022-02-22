@@ -21,11 +21,11 @@ const RetrieveProducts = () =>{
             if (allProducts.length > 0) {
                 getProducts(allProducts);
                 enqueueSnackbar("Product load successfully.", {
-                    variant: 'success',
+                    variant: 'success', autoHideDuration : "100"
                 });
             } else {
                 enqueueSnackbar("Product not found.", {
-                    variant: 'error',
+                    variant: 'error', autoHideDuration : "100"
                 });
                 console.log("Product not found.")
             }

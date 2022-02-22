@@ -30,15 +30,15 @@ const AddProduct = () => {
             event.preventDefault();
             if (!currentProductName) {
                 enqueueSnackbar("Product name cannot be empty", {
-                    variant: 'error',
+                    variant: 'error', autoHideDuration : "100"
                 });
             } else if (!currentProductPrice) {
                 enqueueSnackbar("Product price cannot be empty", {
-                    variant: 'error',
+                    variant: 'error', autoHideDuration : "100"
                 });
             } else if (!currentProductQuantity) {
                 enqueueSnackbar("Product quantity cannot be empty", {
-                    variant: 'error',
+                    variant: 'error', autoHideDuration : "100"
                 });
             } else {
                 postProduct();
@@ -59,7 +59,7 @@ const AddProduct = () => {
                 console.log(response.data);
             } catch (errorResponse) {
                 enqueueSnackbar(errorResponse.toString(), {
-                    variant: 'error',
+                    variant: 'error',autoHideDuration : "100"
                 });
                 console.log(errorResponse);
             }

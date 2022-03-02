@@ -35,3 +35,5 @@ jobs:
       run: npm ci
     - name: npm build
       run: npm run build
+    - name: deploy
+      run: npm run deploy

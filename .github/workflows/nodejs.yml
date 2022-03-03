@@ -40,13 +40,7 @@ jobs:
     - name: define user email
       run: git config --global user.email 'nmw_ng@hotmail.com'
     - name: git remote
-      run: git remote set-url origin git@github.com:MeeWai/ReactJs-Practice-Product-Management-App.git
-    - name: setup SSH keys
-        - uses: |
-              actions/checkout@v2
-              webfactory/ssh-agent@v0.5.4
-      # Make sure the @v0.5.4 matches the current version of theaction
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+        - uses: actions/labeler@v2
+      run: git remote set-url origin https://MeeWai:${{ secrets.GITHUB_TOKEN }}-token@github.com/MeeWai/ReactJs-Practice-Product-Management-App
     - name: deploy
       run: npm run deploy

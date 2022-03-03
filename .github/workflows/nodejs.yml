@@ -41,7 +41,13 @@ jobs:
       run: git config --global user.email 'nmw_ng@hotmail.com'
     - name: git remote
       run: git remote set-url origin git@github.com:MeeWai/ReactJs-Practice-Product-Management-App.git
-    - name: check ssh key
-      run : ssh -T git@github.com
+    - name: setup SSH keys
+      env:
+        SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+      run : |
+        mkdir -p ~/.ssh
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+        ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
     - name: deploy
       run: npm run deploy

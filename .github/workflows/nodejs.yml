@@ -31,15 +31,19 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         cache-dependency-path: '**/package-lock.json'
-    - name: continous integration with npm
+    - uses: actions/labeler@v2
+    - name: Setup Github Token
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Continous Integration
       run: npm ci
-    - name: npm build
+    - name: Building
       run: npm run build
-    - name: define user info
-      run : git config --global user.name 'meewai'
-    - name: define user email
-      run: git config --global user.email 'nmw_ng@hotmail.com'
-    - name: git remote
-      run: git remote set-url origin https://MeeWai:${{ secrets.GITHUB_TOKEN }}@github.com/MeeWai/ReactJs-Practice-Product-Management-App
-    - name: deploy
+#    - name: define user info
+#      run : git config --global user.name 'meewai'
+#    - name: define user email
+#      run: git config --global user.email 'nmw_ng@hotmail.com'
+#    - name: git remote
+#      run: git remote set-url origin https://MeeWai:${{ secrets.GITHUB_TOKEN }}@github.com/MeeWai/ReactJs-Practice-Product-Management-App
+    - name: Deploying
       run: npm run deploy

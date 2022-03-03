@@ -11,7 +11,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     
     defaults:
@@ -35,15 +34,11 @@ jobs:
       uses: actions/labeler@v2
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Define User Info
+      uses: fregante/setup-git-user@v1
     - name: Continous Integration
       run: npm ci
     - name: Building
       run: npm run build
-#    - name: define user info
-#      run : git config --global user.name 'meewai'
-#    - name: define user email
-#      run: git config --global user.email 'nmw_ng@hotmail.com'
-#    - name: git remote
-#      run: git remote set-url origin https://MeeWai:${{ secrets.GITHUB_TOKEN }}@github.com/MeeWai/ReactJs-Practice-Product-Management-App
     - name: Deploying
       run: npm run deploy

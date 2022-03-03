@@ -40,7 +40,6 @@ jobs:
     - name: define user email
       run: git config --global user.email 'nmw_ng@hotmail.com'
     - name: git remote
-      uses: actions/labeler@v2
       run: git remote set-url origin https://MeeWai:${{ secrets.GITHUB_TOKEN }}@github.com/MeeWai/ReactJs-Practice-Product-Management-App
     - name: deploy
       run: npm run deploy

@@ -40,5 +40,7 @@ jobs:
       run: npm ci
     - name: Building
       run: npm run build
+    - name: git remote
+      run: git remote set-url origin https://MeeWai:${{ secrets.GITHUB_TOKEN }}@github.com/MeeWai/ReactJs-Practice-Product-Management-App
     - name: Deploying
       run: npm run deploy

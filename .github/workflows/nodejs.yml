@@ -42,12 +42,11 @@ jobs:
     - name: git remote
       run: git remote set-url origin git@github.com:MeeWai/ReactJs-Practice-Product-Management-App.git
     - name: setup SSH keys
-      env:
-        SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-      run : |
-        mkdir -p ~/.ssh
-        ssh-keyscan github.com >> ~/.ssh/known_hosts
-        ssh-agent -a $SSH_AUTH_SOCK > /dev/null
-        ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
+        - uses: |
+              actions/checkout@v2
+              webfactory/ssh-agent@v0.5.4
+      # Make sure the @v0.5.4 matches the current version of theaction
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
     - name: deploy
       run: npm run deploy

@@ -107,6 +107,7 @@ const AddProduct = () => {
                         <div className="submitBTN">
                             <button type="submit">Add product</button>
                         </div>
+                        <h1>Testing testing</h1>
                     </div>
                 </div>
             </form>

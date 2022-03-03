@@ -75,7 +75,6 @@ const ShowProduct = (props) => {
                     </TableBody>
                 </Table>
             </TableContainer>
-            <h6>Testing- Currently under maintenance</h6>
         </div>
     );
 };

@@ -31,8 +31,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         cache-dependency-path: '**/package-lock.json'
-    - uses: actions/labeler@v2
     - name: Setup Github Token
+      uses: actions/labeler@v2
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
     - name: Continous Integration

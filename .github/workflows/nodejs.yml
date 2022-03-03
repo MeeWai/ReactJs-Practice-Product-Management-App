@@ -36,6 +36,8 @@ jobs:
     - name: npm build
       run: npm run build
     - name: define user info
-      run : git remote set-url origin https://MeeWai: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@github.com/MeeWai/ReactJs-Practice-Product-Management-App
+      run : git config --global user.name 'meewai'
+    - name: define user email
+      run: git config --global user.email 'nmw_ng@hotmail.com'
     - name: deploy
       run: npm run deploy

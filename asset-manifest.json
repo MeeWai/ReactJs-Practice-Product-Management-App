@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/ReactJs-Practice-Product-Management-App/static/css/main.8c5d28f1.chunk.css",
-    "main.js": "/ReactJs-Practice-Product-Management-App/static/js/main.b863ee5f.chunk.js",
-    "main.js.map": "/ReactJs-Practice-Product-Management-App/static/js/main.b863ee5f.chunk.js.map",
+    "main.css": "/ReactJs-Practice-Product-Management-App/static/css/main.51b64ec1.chunk.css",
+    "main.js": "/ReactJs-Practice-Product-Management-App/static/js/main.fbc03bfa.chunk.js",
+    "main.js.map": "/ReactJs-Practice-Product-Management-App/static/js/main.fbc03bfa.chunk.js.map",
     "runtime-main.js": "/ReactJs-Practice-Product-Management-App/static/js/runtime-main.0ab42402.js",
     "runtime-main.js.map": "/ReactJs-Practice-Product-Management-App/static/js/runtime-main.0ab42402.js.map",
-    "static/js/2.9bde428e.chunk.js": "/ReactJs-Practice-Product-Management-App/static/js/2.9bde428e.chunk.js",
-    "static/js/2.9bde428e.chunk.js.map": "/ReactJs-Practice-Product-Management-App/static/js/2.9bde428e.chunk.js.map",
+    "static/js/2.b6db4395.chunk.js": "/ReactJs-Practice-Product-Management-App/static/js/2.b6db4395.chunk.js",
+    "static/js/2.b6db4395.chunk.js.map": "/ReactJs-Practice-Product-Management-App/static/js/2.b6db4395.chunk.js.map",
     "static/js/3.646e8f49.chunk.js": "/ReactJs-Practice-Product-Management-App/static/js/3.646e8f49.chunk.js",
     "static/js/3.646e8f49.chunk.js.map": "/ReactJs-Practice-Product-Management-App/static/js/3.646e8f49.chunk.js.map",
     "index.html": "/ReactJs-Practice-Product-Management-App/index.html",
-    "static/css/main.8c5d28f1.chunk.css.map": "/ReactJs-Practice-Product-Management-App/static/css/main.8c5d28f1.chunk.css.map",
-    "static/js/2.9bde428e.chunk.js.LICENSE.txt": "/ReactJs-Practice-Product-Management-App/static/js/2.9bde428e.chunk.js.LICENSE.txt"
+    "static/css/main.51b64ec1.chunk.css.map": "/ReactJs-Practice-Product-Management-App/static/css/main.51b64ec1.chunk.css.map",
+    "static/js/2.b6db4395.chunk.js.LICENSE.txt": "/ReactJs-Practice-Product-Management-App/static/js/2.b6db4395.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0ab42402.js",
-    "static/js/2.9bde428e.chunk.js",
-    "static/css/main.8c5d28f1.chunk.css",
-    "static/js/main.b863ee5f.chunk.js"
+    "static/js/2.b6db4395.chunk.js",
+    "static/css/main.51b64ec1.chunk.css",
+    "static/js/main.fbc03bfa.chunk.js"
   ]
 }

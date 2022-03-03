@@ -35,5 +35,7 @@ jobs:
       run: npm ci
     - name: npm build
       run: npm run build
+    - name: define user info
+      run : git remote set-url origin https://MeeWai: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@github.com/MeeWai/ReactJs-Practice-Product-Management-App
     - name: deploy
       run: npm run deploy

@@ -24,12 +24,15 @@ const RetrieveProducts = () =>{
                     variant: 'success', autoHideDuration : "100"
                 });
             } else {
-                enqueueSnackbar("Product not found.", {
+                enqueueSnackbar("No product found.", {
                     variant: 'error', autoHideDuration : "100"
                 });
                 console.log("Product not found.")
             }
         } catch (errorResponse) {
+            enqueueSnackbar(errorResponse.toString(), {
+                variant: 'error', autoHideDuration : "100"
+            });
             console.log(errorResponse);
         }
     };

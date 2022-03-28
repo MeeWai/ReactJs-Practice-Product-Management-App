@@ -13,6 +13,10 @@
   
 2. [Spring Boot with Hibernate](https://www.baeldung.com/spring-boot-hibernate)
 
+3. [Pagination and Sorting using Spring Data JPA](https://www.baeldung.com/spring-data-jpa-pagination-sorting)
+
+4. [REST Pagination in Spring](https://www.baeldung.com/rest-api-pagination-in-spring)
+
 <h3>Frontend</h3>
 
 1. [React - The Complete Guide (incl Hooks, React Router, Redux)](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
